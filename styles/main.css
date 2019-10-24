@@ -1,0 +1,14 @@
+.main-body {
+  background-image: url("../../assests/images/silas-baisch-K785Da4A_JA-unsplash.jpg");
+}
+
+.card-div {
+  width: 100%;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=main.css.map */
