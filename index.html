@@ -8,19 +8,19 @@
     <link rel="stylesheet" type="text/css" href="styles/main.css" />
   </head>
   <body>
-    <div id="pokedex" class="main-body">
-      <form>
-        <input
-          type="text"
-          id="search-box"
-          class="search-input"
-          placeholder="Search for Name"
-          <!--
-          onkeyup="searchFilter()"
-          --
-        />
-      </form>
+    <div class="search">
+      <input
+        type="text"
+        id="search-box"
+        class="search-input"
+        placeholder="Search for Name"
+        <!--
+        onkeyup="searchFilter()"
+        --
+      />
     </div>
+
+    <div id="pokedex" class="main-body"></div>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="scipts/main.js"></script>

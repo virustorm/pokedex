@@ -1,10 +1,20 @@
 .main-body {
   background-image: url("../../assests/images/silas-baisch-K785Da4A_JA-unsplash.jpg");
-  //   display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .card {
   &-div {
     width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 20px;
+    text-transform: capitalize;
+    background-color: #f5f6fa;
+    border: 1px solid black;
+    border-radius: 10px;
   }
 }
