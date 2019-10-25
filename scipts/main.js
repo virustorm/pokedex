@@ -4,6 +4,7 @@ axios
   .get("https://pokeapi.co/api/v2/pokemon?offset=0&limit=964")
   .then(result => {
     pokeDex(body, result.data.results);
+    // addNameListener(result.data.results);
   });
 // axios.get("https://pokeapi.co/api/v2/pokemon/1/").then(result => {
 //   console.log(result.data.types.length);
@@ -36,10 +37,14 @@ function pokeDex(div, data) {
       var text = document.createTextNode(pokeType);
       cardType.appendChild(text);
     });
+    let link = document.createElement("a");
+    link.href = `pages/${data[i].name}.html`;
     cardDiv.appendChild(cardName);
     cardDiv.appendChild(cardImg);
     cardDiv.appendChild(cardType);
-    div.appendChild(cardDiv);
+    link.appendChild(cardDiv);
+
+    div.appendChild(link);
   }
 }
 function searchFilter() {
@@ -64,3 +69,13 @@ function searchFilter() {
     }
   }
 }
+
+// function addNameListener(data) {
+//   for (i=0 ; i<151; i++) {
+//     let pokeDiv = document.getElementById(data[i].name);
+//     let poke = pokeDiv.querySelector(".card-div");
+//     poke.addEventListener("click" => {
+//       <a></a>
+//     })
+//   }
+// }

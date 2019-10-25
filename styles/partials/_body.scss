@@ -3,6 +3,12 @@
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
+
+  & a {
+    width: 100%;
+    text-decoration: none;
+    color: black;
+  }
 }
 
 .card {
@@ -21,14 +27,24 @@
 @include tablet {
   .main-body {
     justify-content: space-around;
+
+    & a {
+      width: 40%;
+    }
   }
 
-  .card-div {
-    width: 30%;
-  }
+  // .card-div {
+  //   width: 100%;
+  // }
 }
 
 @include desktop {
+  .main-body {
+    & a {
+      width: 30%;
+    }
+  }
+
   .card-div {
     transition: 0.2s ease-in-out all;
 
