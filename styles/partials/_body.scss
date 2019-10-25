@@ -1,5 +1,4 @@
 .main-body {
-  background-image: url("../../assests/images/silas-baisch-K785Da4A_JA-unsplash.jpg");
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -16,5 +15,25 @@
     background-color: #f5f6fa;
     border: 1px solid black;
     border-radius: 10px;
+  }
+}
+
+@include tablet {
+  .main-body {
+    justify-content: space-around;
+  }
+
+  .card-div {
+    width: 30%;
+  }
+}
+
+@include desktop {
+  .card-div {
+    transition: 0.2s ease-in-out all;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }

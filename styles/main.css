@@ -1,5 +1,4 @@
 .main-body {
-  background-image: url("../../assests/images/silas-baisch-K785Da4A_JA-unsplash.jpg");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,6 +21,27 @@
   border-radius: 10px;
 }
 
+@media only screen and (min-width: 768px) {
+  .main-body {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .card-div {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .card-div {
+    -webkit-transition: 0.2s ease-in-out all;
+    transition: 0.2s ease-in-out all;
+  }
+  .card-div:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
 .search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -41,6 +61,7 @@
   height: 50px;
   border-radius: 50px;
   text-align: center;
+  width: 100%;
 }
 
 .search-input::-webkit-input-placeholder {
