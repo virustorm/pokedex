@@ -1,0 +1,12 @@
+@import "./partials/breakpoints.scss";
+@import "./partials/body";
+@import "./partials/search";
+
+@import "./partials/pokemonPage";
+
+html,
+body {
+	margin: 0;
+	background-image: url("../../assests/images/silas-baisch-K785Da4A_JA-unsplash.jpg");
+	padding: 0 3%;
+}

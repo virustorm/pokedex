@@ -95,10 +95,110 @@
           box-shadow: 0 0 10px 10px lightgrey;
 }
 
+.pokemonPage {
+  background-color: white;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.pokemonPage-img {
+  height: 150px;
+}
+
+.pokemonPage-title {
+  text-transform: capitalize;
+}
+
+.pokemonPage-move {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 5%;
+}
+
+.pokemonPage-move h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.pokemonPage-move h5 {
+  margin: 10px 0;
+  text-transform: capitalize;
+  width: 40%;
+  font-weight: 100;
+}
+
+.pokemonPage-stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 20px;
+}
+
+.pokemonPage-stats h3 {
+  margin: 0 0 10px 0;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.pokemonPage-stats h5 {
+  margin: 0;
+  text-transform: capitalize;
+  font-weight: 100;
+}
+
+@media only screen and (min-width: 1440px) {
+  .pokemonPage-img {
+    height: 300px;
+  }
+  .pokemonPage-title {
+    margin: 50px;
+    font-size: 60px;
+  }
+  .pokemonPage-stats h3 {
+    font-size: 45px;
+  }
+  .pokemonPage-stats h5 {
+    font-size: 30px;
+  }
+  .pokemonPage-move {
+    padding: 0 0 0 12.5%;
+  }
+  .pokemonPage-move h3 {
+    font-size: 45px;
+  }
+  .pokemonPage-move h5 {
+    font-size: 30px;
+    width: 30%;
+  }
+}
+
 html,
 body {
   margin: 0;
-  padding: 0;
   background-image: url("../../assests/images/silas-baisch-K785Da4A_JA-unsplash.jpg");
   padding: 0 3%;
 }
