@@ -1,55 +1,59 @@
 .main-body {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-between;
 
-  & a {
-    width: 100%;
-    text-decoration: none;
-    color: black;
-  }
+	& a {
+		width: 100%;
+		text-decoration: none;
+		color: black;
+	}
 }
 
 .card {
-  &-div {
-    width: 100%;
-    text-align: center;
-    margin: 20px 0;
-    font-size: 20px;
-    text-transform: capitalize;
-    background-color: #f5f6fa;
-    border: 1px solid black;
-    border-radius: 10px;
-  }
+	&-div {
+		width: 100%;
+		text-align: center;
+		margin: 20px 0;
+		font-size: 20px;
+		text-transform: capitalize;
+		background-color: #f5f6fa;
+		border: 1px solid black;
+		border-radius: 10px;
+	}
+}
+
+.poke-type {
+	margin: 10px 30%;
 }
 
 @include tablet {
-  .main-body {
-    justify-content: space-around;
+	.main-body {
+		justify-content: space-around;
 
-    & a {
-      width: 40%;
-    }
-  }
+		& a {
+			width: 40%;
+		}
+	}
 
-  // .card-div {
-  //   width: 100%;
-  // }
+	.card-div {
+		height: 270px;
+	}
 }
 
 @include desktop {
-  .main-body {
-    & a {
-      width: 30%;
-    }
-  }
+	.main-body {
+		& a {
+			width: 30%;
+		}
+	}
 
-  .card-div {
-    transition: 0.2s ease-in-out all;
+	.card-div {
+		transition: 0.2s ease-in-out all;
 
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
 }
