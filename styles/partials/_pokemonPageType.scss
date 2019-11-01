@@ -1,0 +1,19 @@
+.poke-type-s {
+	border: 1px solid black;
+	text-transform: capitalize;
+	margin: 10px;
+	width: 150px;
+	text-align: center;
+}
+.typeDiv-s {
+	display: flex;
+	width: 30%;
+	justify-content: center;
+}
+
+@include desktop {
+	.poke-type-s {
+		font-size: 40px;
+		margin: 20px;
+	}
+}

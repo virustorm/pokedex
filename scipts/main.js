@@ -80,13 +80,3 @@ function searchFilter() {
 		}
 	}
 }
-
-// function addNameListener(data) {
-//   for (i=0 ; i<151; i++) {
-//     let pokeDiv = document.getElementById(data[i].name);
-//     let poke = pokeDiv.querySelector(".card-div");
-//     poke.addEventListener("click" => {
-//       <a></a>
-//     })
-//   }
-// }

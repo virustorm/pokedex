@@ -192,7 +192,7 @@
     font-size: 30px;
   }
   .pokemonPage-move {
-    padding: 0 0 0 12.5%;
+    padding: 0 12.5% 0 12.5%;
   }
   .pokemonPage-move h3 {
     font-size: 45px;
@@ -200,6 +200,31 @@
   .pokemonPage-move h5 {
     font-size: 30px;
     width: 30%;
+  }
+}
+
+.poke-type-s {
+  border: 1px solid black;
+  text-transform: capitalize;
+  margin: 10px;
+  width: 150px;
+  text-align: center;
+}
+
+.typeDiv-s {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (min-width: 1440px) {
+  .poke-type-s {
+    font-size: 40px;
+    margin: 20px;
   }
 }
 

@@ -16,6 +16,30 @@ function createPoke(div, data) {
 	let pokeImg = document.createElement('img');
 	pokeImg.classList.add('pokemonPage-img');
 	pokeImg.src = data.sprites.front_default;
+	let typeDiv = document.createElement('div');
+	typeDiv.classList.add('typeDiv-s');
+	let pokeType = '';
+	axios.get(`${url}pokemon/3`).then(function(result) {
+		if (result.data.types.length === 1) {
+			pokeType = `	 ${result.data.types[0].type.name}`;
+			text = document.createTextNode(pokeType);
+			let cardType = document.createElement('h3');
+			cardType.classList.add(`${result.data.types[0].type.name}`);
+			cardType.classList.add('poke-type-s');
+			cardType.appendChild(text);
+			typeDiv.appendChild(cardType);
+		} else if (result.data.types.length === 2) {
+			for (i = 0; i < result.data.types.length; i++) {
+				pokeType = `	 ${result.data.types[i].type.name}`;
+				text = document.createTextNode(pokeType);
+				let cardType = document.createElement('h3');
+				cardType.classList.add(`${result.data.types[i].type.name}`);
+				cardType.classList.add('poke-type-s');
+				cardType.appendChild(text);
+				typeDiv.appendChild(cardType);
+			}
+		}
+	});
 	let statMainDiv = document.createElement('div');
 	statMainDiv.classList.add('pokemonPage-stats');
 	let statTitle = document.createElement('h3');
@@ -54,6 +78,7 @@ function createPoke(div, data) {
 
 	div.appendChild(name);
 	div.appendChild(pokeImg);
+	div.appendChild(typeDiv);
 	div.appendChild(statMainDiv);
 	div.appendChild(pokemonMoveMainDiv);
 }
