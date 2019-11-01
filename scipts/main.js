@@ -11,7 +11,7 @@ axios.get('https://pokeapi.co/api/v2/pokemon?offset=0&limit=964').then((result) 
 
 let body = document.getElementById('pokedex');
 function pokeDex(div, data) {
-	for (i = 0; i < 5; i++) {
+	for (i = 0; i < 151; i++) {
 		let cardDiv = document.createElement('div');
 		cardDiv.classList.add('card-div');
 		cardDiv.id = data[i].name;

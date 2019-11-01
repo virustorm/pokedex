@@ -1,6 +1,7 @@
 @import "./partials/breakpoints.scss";
 @import "./partials/body";
 @import "./partials/search";
+@import "./partials/colors";
 
 @import "./partials/pokemonPage";
 
@@ -12,5 +13,59 @@ body {
 }
 
 .grass {
-	background-color: green;
+	background-color: $grass;
+}
+.fire {
+	background-color: $fire;
+}
+.flying {
+	background-color: $flying;
+}
+.water {
+	background-color: $water;
+}
+.bug {
+	background-color: $bug;
+}
+.poison {
+	background-color: $poison;
+}
+.poke-type {
+	border: 1px solid black;
+}
+.ground {
+	background-color: $ground;
+}
+.dark {
+	background-color: $dark;
+}
+.psychic {
+	background-color: $psychic;
+}
+.fighting {
+	background-color: $fighting;
+}
+.normal {
+	background-color: $normal;
+}
+.rock {
+	background-color: $rock;
+}
+.steel {
+	background-color: $steel;
+}
+.electric {
+	background-color: $electric;
+}
+.fairy {
+	background-color: $fairy;
+}
+.ice {
+	background-color: $ice;
+}
+.ghost {
+	background-color: $ghost;
+}
+.dragon {
+	background-color: $dragon;
 }
